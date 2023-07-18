@@ -1,0 +1,11 @@
+D:\workspace_NT\PROGRAM\c#\Console\DesignPattern\DesignPattern\bin\Debug\DesignPattern.exe.config
+D:\workspace_NT\PROGRAM\c#\Console\DesignPattern\DesignPattern\bin\Debug\DesignPattern.exe
+D:\workspace_NT\PROGRAM\c#\Console\DesignPattern\DesignPattern\bin\Debug\DesignPattern.pdb
+D:\workspace_NT\PROGRAM\c#\Console\DesignPattern\DesignPattern\obj\Debug\DesignPattern.csprojAssemblyReference.cache
+D:\workspace_NT\PROGRAM\c#\Console\DesignPattern\DesignPattern\obj\Debug\DesignPattern.csproj.CoreCompileInputs.cache
+D:\workspace_NT\PROGRAM\c#\Console\DesignPattern\DesignPattern\obj\Debug\DesignPattern.exe
+D:\workspace_NT\PROGRAM\c#\Console\DesignPattern\DesignPattern\obj\Debug\DesignPattern.pdb
+D:\workspace_NT\PROGRAM\c#\Console\DesignPattern\DesignPattern\bin\Debug\EPPlus.dll
+D:\workspace_NT\PROGRAM\c#\Console\DesignPattern\DesignPattern\bin\Debug\FileWorker.pdb
+D:\workspace_NT\PROGRAM\c#\Console\DesignPattern\DesignPattern\bin\Debug\EPPlus.xml
+D:\workspace_NT\PROGRAM\c#\Console\DesignPattern\DesignPattern\obj\Debug\DesignPattern.csproj.CopyComplete

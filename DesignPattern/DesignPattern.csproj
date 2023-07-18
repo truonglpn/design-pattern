@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{687A3003-9181-4FF8-A190-39E1D57BD567}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>DesignPattern</RootNamespace>
+    <AssemblyName>DesignPattern</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FileWorker">
+      <HintPath>..\..\..\..\lib\FileWorker\FileWorker\bin\Debug\FileWorker.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BehaviorPatternGroup\BridgeGeneral\BridgePattern\Abstract\IColor.cs" />
+    <Compile Include="BehaviorPatternGroup\BridgeGeneral\BridgePattern\Abstract\Shape.cs" />
+    <Compile Include="BehaviorPatternGroup\BridgeGeneral\BridgePattern\Concrete\Blue.cs" />
+    <Compile Include="BehaviorPatternGroup\BridgeGeneral\BridgePattern\Concrete\Circle.cs" />
+    <Compile Include="BehaviorPatternGroup\BridgeGeneral\BridgePattern\Concrete\Rectangle.cs" />
+    <Compile Include="BehaviorPatternGroup\BridgeGeneral\BridgePattern\Concrete\Red.cs" />
+    <Compile Include="BehaviorPatternGroup\BridgeGeneral\BridgePattern\Program.cs" />
+    <Compile Include="BehaviorPatternGroup\CommandGeneral\CommandPattern\Commander\Remote.cs" />
+    <Compile Include="BehaviorPatternGroup\CommandGeneral\CommandPattern\Command\ICommand.cs" />
+    <Compile Include="BehaviorPatternGroup\CommandGeneral\CommandPattern\Command\TurnOffCommand.cs" />
+    <Compile Include="BehaviorPatternGroup\CommandGeneral\CommandPattern\Command\TurnOnCommand.cs" />
+    <Compile Include="BehaviorPatternGroup\CommandGeneral\CommandPattern\Concrete\Fan.cs" />
+    <Compile Include="BehaviorPatternGroup\CommandGeneral\CommandPattern\Program.cs" />
+    <Compile Include="BehaviorPatternGroup\CommandGeneral\CommandPattern_2\Command\ICommand.cs" />
+    <Compile Include="BehaviorPatternGroup\CommandGeneral\CommandPattern_2\ConcreteCommand\FanTurnOffCommand.cs" />
+    <Compile Include="BehaviorPatternGroup\CommandGeneral\CommandPattern_2\ConcreteCommand\FanTurnOnCammand.cs" />
+    <Compile Include="BehaviorPatternGroup\CommandGeneral\CommandPattern_2\ConcreteCommand\GarageDoorUpCommand.cs" />
+    <Compile Include="BehaviorPatternGroup\CommandGeneral\CommandPattern_2\ConcreteCommand\GarageDoorDownCommand.cs" />
+    <Compile Include="BehaviorPatternGroup\CommandGeneral\CommandPattern_2\ConcreteCommand\LightingTurnOffCommand.cs" />
+    <Compile Include="BehaviorPatternGroup\CommandGeneral\CommandPattern_2\ConcreteCommand\LightingTurnOnCommand.cs" />
+    <Compile Include="BehaviorPatternGroup\CommandGeneral\CommandPattern_2\Concrete\Fan.cs" />
+    <Compile Include="BehaviorPatternGroup\CommandGeneral\CommandPattern_2\Concrete\GarageDoor.cs" />
+    <Compile Include="BehaviorPatternGroup\CommandGeneral\CommandPattern_2\Concrete\Lighting.cs" />
+    <Compile Include="BehaviorPatternGroup\CommandGeneral\CommandPattern_2\Invoker\RemoteControl.cs" />
+    <Compile Include="BehaviorPatternGroup\CommandGeneral\CommandPattern_2\Invoker\SimpleControl.cs" />
+    <Compile Include="BehaviorPatternGroup\CommandGeneral\CommandPattern_3\Command\ICommand.cs" />
+    <Compile Include="BehaviorPatternGroup\CommandGeneral\CommandPattern_3\MacroCommand\MarcoCommand.cs" />
+    <Compile Include="BehaviorPatternGroup\CommandGeneral\CommandPattern_2\Program.cs" />
+    <Compile Include="BehaviorPatternGroup\Composite\Component\BaseGift.cs" />
+    <Compile Include="BehaviorPatternGroup\Composite\Component\IGiftOperation.cs" />
+    <Compile Include="BehaviorPatternGroup\Composite\Composite\CompositeGift.cs" />
+    <Compile Include="BehaviorPatternGroup\Composite\Leaf\SingleGift.cs" />
+    <Compile Include="BehaviorPatternGroup\Composite\Program.cs" />
+    <Compile Include="BehaviorPatternGroup\DecoratorPattern\Component\ICar.cs" />
+    <Compile Include="BehaviorPatternGroup\DecoratorPattern\ConcreteComponent\BMWCar.cs" />
+    <Compile Include="BehaviorPatternGroup\DecoratorPattern\ConcreteDecorator\DieselCarDecorator.cs" />
+    <Compile Include="BehaviorPatternGroup\DecoratorPattern\ConcreteDecorator\PetrolCarDecorator.cs" />
+    <Compile Include="BehaviorPatternGroup\DecoratorPattern\Decorator\CarDecorator.cs" />
+    <Compile Include="BehaviorPatternGroup\DecoratorPattern\Program.cs" />
+    <Compile Include="BehaviorPatternGroup\FadacePattern\Facade\ShopFadace.cs" />
+    <Compile Include="BehaviorPatternGroup\FadacePattern\Program.cs" />
+    <Compile Include="BehaviorPatternGroup\FadacePattern\SubSystem\AccountService.cs" />
+    <Compile Include="BehaviorPatternGroup\FadacePattern\SubSystem\EmaiService.cs" />
+    <Compile Include="BehaviorPatternGroup\FadacePattern\SubSystem\PaymentService.cs" />
+    <Compile Include="BehaviorPatternGroup\FadacePattern\SubSystem\ShippingService.cs" />
+    <Compile Include="BehaviorPatternGroup\FadacePattern\SubSystem\SMSService.cs" />
+    <Compile Include="BehaviorPatternGroup\ProxyPattern\Program.cs" />
+    <Compile Include="BehaviorPatternGroup\ProxyPattern\Proxy\VideoProxy.cs" />
+    <Compile Include="BehaviorPatternGroup\ProxyPattern\ServiceInterface\IVideo.cs" />
+    <Compile Include="BehaviorPatternGroup\ProxyPattern\Service\RealVideo.cs" />
+    <Compile Include="BehaviorPatternGroup\StatePattern\ConcreteContextA.cs" />
+    <Compile Include="BehaviorPatternGroup\StatePattern\ConcreteContextB.cs" />
+    <Compile Include="BehaviorPatternGroup\StatePattern\Context.cs" />
+    <Compile Include="BehaviorPatternGroup\StatePattern\Progarm.cs" />
+    <Compile Include="BehaviorPatternGroup\StatePattern\State.cs" />
+    <Compile Include="BehaviorPatternGroup\StrategyPattern\AbstractStrategy\ExportContext.cs" />
+    <Compile Include="BehaviorPatternGroup\StrategyPattern\AbstractStrategy\IExport.cs" />
+    <Compile Include="BehaviorPatternGroup\StrategyPattern\ConcreteStrategy\ExportPDF.cs" />
+    <Compile Include="BehaviorPatternGroup\StrategyPattern\ConcreteStrategy\ExportPNG.cs" />
+    <Compile Include="BehaviorPatternGroup\StrategyPattern\ConcreteStrategy\ExportWord.cs" />
+    <Compile Include="BehaviorPatternGroup\StrategyPattern\Program.cs" />
+    <Compile Include="BehaviorPatternGroup\TemplateGeneral\TemplateMethodPattern\ConcreteTemplate\CSVDataMiner.cs" />
+    <Compile Include="BehaviorPatternGroup\TemplateGeneral\TemplateMethodPattern\ConcreteTemplate\PDFDataMiner.cs" />
+    <Compile Include="BehaviorPatternGroup\TemplateGeneral\TemplateMethodPattern\DataMiner.cs" />
+    <Compile Include="BehaviorPatternGroup\TemplateGeneral\TemplateMethodPattern\Program.cs" />
+    <Compile Include="BehaviorPatternGroup\TemplateGeneral\TemplateMethodPattern_2\CaffeinBevarage.cs" />
+    <Compile Include="BehaviorPatternGroup\TemplateGeneral\TemplateMethodPattern_2\Concrete\Coffee.cs" />
+    <Compile Include="BehaviorPatternGroup\TemplateGeneral\TemplateMethodPattern_2\Concrete\Tea.cs" />
+    <Compile Include="BehaviorPatternGroup\TemplateGeneral\TemplateMethodPattern_2\Program.cs" />
+    <Compile Include="CreationalPatternGroup\AbstractFactoryPattern\AbstractFactory\IPhoneFactory.cs" />
+    <Compile Include="CreationalPatternGroup\AbstractFactoryPattern\AbstractProduct\ILao.cs" />
+    <Compile Include="CreationalPatternGroup\AbstractFactoryPattern\AbstractProduct\IVietNam.cs" />
+    <Compile Include="CreationalPatternGroup\AbstractFactoryPattern\ConcreteFactory\FPTPhoneFactory.cs" />
+    <Compile Include="CreationalPatternGroup\AbstractFactoryPattern\ConcreteFactory\VnptPhoneFactory.cs" />
+    <Compile Include="CreationalPatternGroup\AbstractFactoryPattern\ConcreteProduct\FPTLaoPhone.cs" />
+    <Compile Include="CreationalPatternGroup\AbstractFactoryPattern\ConcreteProduct\FPTVNPhone.cs" />
+    <Compile Include="CreationalPatternGroup\AbstractFactoryPattern\ConcreteProduct\VNPTLaoPhone.cs" />
+    <Compile Include="CreationalPatternGroup\AbstractFactoryPattern\ConcreteProduct\VNPTVNPhone.cs" />
+    <Compile Include="CreationalPatternGroup\AbstractFactoryPattern\Program.cs" />
+    <Compile Include="CreationalPatternGroup\AbstractFactoryPattern\StoreClient.cs" />
+    <Compile Include="CreationalPatternGroup\BuilderPattern\AbstractBuilder\ConcreteBuilder.cs" />
+    <Compile Include="CreationalPatternGroup\BuilderPattern\AbstractBuilder\IBuilder.cs" />
+    <Compile Include="CreationalPatternGroup\BuilderPattern\Director\Director.cs" />
+    <Compile Include="CreationalPatternGroup\BuilderPattern\Director\Product.cs" />
+    <Compile Include="CreationalPatternGroup\BuilderPattern\Program.cs" />
+    <Compile Include="CreationalPatternGroup\FactoryMethodPattern\FactoryMethod\IPizza.cs" />
+    <Compile Include="CreationalPatternGroup\FactoryMethodPattern\FactoryMethod\PizzaFactory.cs" />
+    <Compile Include="CreationalPatternGroup\FactoryMethodPattern\Model\BeefPizza.cs" />
+    <Compile Include="CreationalPatternGroup\FactoryMethodPattern\Model\ChickenPizza.cs" />
+    <Compile Include="CreationalPatternGroup\FactoryMethodPattern\Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="CreationalPatternGroup\PrototypePattern\ClientComputer.cs" />
+    <Compile Include="CreationalPatternGroup\PrototypePattern\AbstractPrototype\SettingComputerPrototype.cs" />
+    <Compile Include="CreationalPatternGroup\PrototypePattern\Program.cs" />
+    <Compile Include="CreationalPatternGroup\PrototypePattern\SettingComputer.cs" />
+    <Compile Include="CreationalPatternGroup\Singleton\NoThreadSafeSingleton.cs" />
+    <Compile Include="CreationalPatternGroup\Singleton\Program.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <Compile Include="BehaviorPatternGroup\CommandGeneral\CommandPattern_2\ConcreteCommand\NoCommand.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

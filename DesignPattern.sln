@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.33026.149
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPattern", "DesignPattern\DesignPattern.csproj", "{687A3003-9181-4FF8-A190-39E1D57BD567}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestDrive", "TestDrive\TestDrive.csproj", "{379AA95C-FB48-497A-8EB0-2DCFE5A27F09}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{687A3003-9181-4FF8-A190-39E1D57BD567}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{687A3003-9181-4FF8-A190-39E1D57BD567}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{687A3003-9181-4FF8-A190-39E1D57BD567}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{687A3003-9181-4FF8-A190-39E1D57BD567}.Release|Any CPU.Build.0 = Release|Any CPU
+		{379AA95C-FB48-497A-8EB0-2DCFE5A27F09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{379AA95C-FB48-497A-8EB0-2DCFE5A27F09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{379AA95C-FB48-497A-8EB0-2DCFE5A27F09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{379AA95C-FB48-497A-8EB0-2DCFE5A27F09}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6889096F-2F39-4296-BBA7-7C5356A0864E}
+	EndGlobalSection
+EndGlobal
